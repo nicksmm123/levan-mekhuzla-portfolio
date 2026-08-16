@@ -1,11 +1,6 @@
-import artwork1 from "@assets/generated_images/artwork_1.jpg";
-import artwork2 from "@assets/generated_images/artwork_2.jpg";
-import artwork3 from "@assets/generated_images/artwork_3.jpg";
-import artwork4 from "@assets/generated_images/artwork_4.jpg";
-import artwork5 from "@assets/generated_images/artwork_5.jpg";
-import artwork6 from "@assets/generated_images/artwork_6.jpg";
-import artwork7 from "@assets/generated_images/artwork_7.jpg";
-import artwork8 from "@assets/generated_images/artwork_8.jpg";
+// Placeholder image used for the static fallback artworks.
+// Real artwork images are stored in Supabase Storage and served via the admin CMS.
+const placeholder = "/placeholder-artwork.svg";
 
 export interface Artwork {
   id: string;
@@ -35,7 +30,7 @@ export const artworks: Artwork[] = [
     dimensions: "120 x 90 cm",
     category: "original-paintings",
     status: "available",
-    imageUrl: artwork1,
+    imageUrl: placeholder,
   },
   {
     id: "aw-2",
@@ -46,7 +41,7 @@ export const artworks: Artwork[] = [
     dimensions: "150 x 150 cm",
     category: "original-paintings",
     status: "private-collection",
-    imageUrl: artwork2,
+    imageUrl: placeholder,
   },
   {
     id: "aw-3",
@@ -57,7 +52,7 @@ export const artworks: Artwork[] = [
     dimensions: "70 x 50 cm",
     category: "limited-edition-prints",
     status: "available",
-    imageUrl: artwork3,
+    imageUrl: placeholder,
   },
   {
     id: "aw-4",
@@ -68,7 +63,7 @@ export const artworks: Artwork[] = [
     dimensions: "60 x 80 cm",
     category: "limited-edition-prints",
     status: "private-collection",
-    imageUrl: artwork4,
+    imageUrl: placeholder,
   },
   {
     id: "aw-5",
@@ -79,7 +74,7 @@ export const artworks: Artwork[] = [
     dimensions: "80 x 60 cm",
     category: "original-paintings",
     status: "available",
-    imageUrl: artwork5,
+    imageUrl: placeholder,
   },
   {
     id: "aw-6",
@@ -90,7 +85,7 @@ export const artworks: Artwork[] = [
     dimensions: "100 x 70 cm",
     category: "graphic-works",
     status: "available",
-    imageUrl: artwork6,
+    imageUrl: placeholder,
   },
   {
     id: "aw-7",
@@ -101,7 +96,7 @@ export const artworks: Artwork[] = [
     dimensions: "90 x 110 cm",
     category: "original-paintings",
     status: "private-collection",
-    imageUrl: artwork7,
+    imageUrl: placeholder,
   },
   {
     id: "aw-8",
@@ -112,6 +107,6 @@ export const artworks: Artwork[] = [
     dimensions: "50 x 70 cm",
     category: "graphic-works",
     status: "available",
-    imageUrl: artwork8,
+    imageUrl: placeholder,
   }
 ];
